@@ -1,6 +1,6 @@
 import {test,chromium,devices} from '@playwright/test';
 
-test.only('device emulation', async()=>{
+test('device emulation', async()=>{
     const mobile = devices ['Pixel 5']
     const browser = await chromium.launch();
     const context = await browser.newContext({...mobile});

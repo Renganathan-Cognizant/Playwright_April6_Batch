@@ -53,7 +53,7 @@ test('Built-in locators', async()=>{
 //assignment
 //https://www.saucedemo.com/v1/
 
-test.only("shadow DOM", async ({page}) => {
+test("shadow DOM", async ({page}) => {
 
     await page.goto ('https://books-pwakit.appspot.com/')
     await page.locator('#input').fill('testing books')
